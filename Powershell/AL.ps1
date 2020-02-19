@@ -11,5 +11,3 @@ New-NavContainer -accept_eula `
 
 Write-Host 'Thats all Folks' -ForegroundColor Blue
 
-fcawrtq4t
-
