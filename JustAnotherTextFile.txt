@@ -1,0 +1,29 @@
+Multi cursor editing:
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+    150      10     1708       6256      52,56  20160  10 ApMsgFwd
+    347      18     3488      13396       0,94   5328   0 armsvc
+    502      29     8360      11636      18,31  17464   0 LMS
+    231      13     3432       4068       0,73  11416   0 msdtc
+     53       3     1168       1004       0,31    704   0 smss
+    959      45    22432         20       0,91   7436  10 SystemSettings
+   1147      52    81408      75200       5,19  11392  10 Teams
+    316      23    27756      32784       0,25  12172  10 Teams
+    496     108   366300     247656      38,73  12216  10 Teams
+   1365      75    89560     131584      42,86  12556  10 Teams
+   1267      29    57168      22052      42,73   6400   0 vmms
+
+(Search and Replace in file)
+Batman with RegEx! Search&Replace : S: (NaN) R: $1$1 $1$1 $1$1
+
+NaNNaN NaNNaN NaNNaN, Batman!
+
+(Search and replace over all files)
+Flip Parameters with regEx: S: (Even), (Odd) R: $2, $1
+Function Foo(Even, Odd)
+Function Foo(Even, Odd)
+Function Foo(Even, Odd)
+Function Foo(Even, Odd)
+Function Foo(Even, Odd)
+

@@ -1,0 +1,40 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "echo",
+            "args": [
+                "Hello World!"
+            ]
+        },
+        {
+            "label": "Run my Powershellscript",
+            "type": "shell",
+            "windows": {
+                "command": "${workspaceFolder}\\Powershell\\Exercise1.ps1",
+                "args": [
+                    "${input:FilterForService}"
+                ]
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Get me ready for AL!",
+            "type": "shell",
+            "command": "${workspaceFolder}\\Powershell\\Al.ps1",
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "type": "promptString",
+            "id": "FilterForService",
+            "description": "What service are you Filtering on?",
+            "default": "*MS*"
+        }
+    ]
+}
