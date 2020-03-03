@@ -7,7 +7,9 @@ New-NavContainer -accept_eula `
                  -imageName 'mcr.microsoft.com/businesscentral/onprem:15.2.39040.0-w1-ltsc2019' `
                  -updateHosts `
                  -locale 'da-DK' `
-                 -isolation 'hyperv'
+                 -isolation 'hyperv' `
+                 -includeTestToolkit `
+                 -includeTestLibrariesOnly 
 
 Write-Host 'Thats all Folks' -ForegroundColor Blue
 
